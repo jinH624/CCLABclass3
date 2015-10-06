@@ -1,0 +1,88 @@
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 3.5em;
+		font-family: AdobeFanHeitStd-Bold;
+		color: #fff;
+		margin:0;
+	}
+	h2{
+		font-size: 3em;
+		font-family: AdobeFanHeitStd-Bold;
+		color: #fff;
+		margin:0;
+	}
+	.intro{
+		color: #fff;
+	}
+
+	p{
+		font-size: 1.5em;
+		font-family: AdobeFanHeitStd-Bold;
+		color: #fff;
+		margin:0;
+	}
+	
+	#video{
+		height: 520px;
+	}
+	#img1{
+		height: 100%;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	#section00{
+		background-image: url(myImg/2.2.jpg);
+    	background-position:center top;
+	}
+	#section0{
+		background-image: url(myImg/2.1.jpg);
+    	background-position:center top;
+	}
+	#section1{
+		background-image: url(myImg/2.3.jpg);
+    	background-position:center top;
+	}
+	#section3{
+		background-color: black;
+    	
+	}
+    #map {
+        height: 400px;
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+    #pano {
+        height: 400px;
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+   
+
+	/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fp-slidesNav.bottom{
+		bottom: 25px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	#section2 h1{
+		color: #fff;
+	}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>The moon</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen sliders navigation widh dots." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,sliders navigation, horizontal navigation,horizontal,navigation,dots" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="hw.css" />
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="hw.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#8FB98B', '#DE564B', '#DE564B', '#DE564B'],
+				slidesNavigation: true,
+			});
+		});
+	</script>
+	 <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMqdaoplXZ3mLJDVqT12B0c712BqLP6gA&signed_in=true&callback=initialize">
+    </script>
+
+ 	<script type="text/javascript" src="paperjs-v0.9.24/dist/paper-full.js"></script>
+    <script type="text/paperscript" canvas="canvas"></script>
+
+</head>
+
+<body>
+
+<div id="fullpage">
+
+	<div class="section " id="section00">
+		<div class="name">
+			<h2>Bright is the moon over my home village</h2>
+			<h2>月是故乡明</h2>
+		</div>
+	</div>
+
+	<div class="section " id="section0">
+		
+			<h1>The mid-autumn festival </br>in China!</h1>
+			<p>
+			</br>09/27/2015
+			</p>
+		
+	</div>
+
+	<div class="section " id="section1">
+		<div class="intro">
+			<h2>Supermoon & Lunar eclipse</h2>
+			<div id="video">
+    		<video width="650" height="500" controls="controls">
+  			<source src="http://svs.gsfc.nasa.gov//vis/a010000/a011900/a011981/APPLE_TV_Supermoon_Lunar_Eclipse_MASTER_appletv.m4v"/>
+    		</video>
+    		</div>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<h1>Shanghai</h1>
+			<div id="map"></div>
+			<p>Where to see the moon?</p>
+		</div>	
+
+		<div class="slide" id="slide1" data-anchor="slide1">
+			<h1>Shanghai</h1>
+    		<div id="pano"></div>
+    		<p>Street view</p>
+		</div>
+
+	</div>
+
+	<div class="section" id="section3">
+		<div id="img1">
+			
+			<img src="http://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/nhq201509270026.jpg?itok=9FPlCr2T"  alt="1"/>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+	<canvas id="canvas" resize hidpi="off"></canvas>
+</body>
+</html>
